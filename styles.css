@@ -1,0 +1,155 @@
+body {
+    background-image: linear-gradient(to bottom right, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+h1 {
+    font-weight: 700;
+}
+
+#faqSection {
+    background-color: white;
+    margin: 10% 15%;
+    height: 480px;
+    width: 70%;
+    border-radius: 1.5rem;
+    overflow:hidden;
+}
+
+.faqbg {
+    position: relative;
+    float: left;
+    bottom: 58%;
+    right: 65%;
+}
+
+.womendesk {
+    position: relative;
+    bottom: 175%;
+    right: 8%;
+}
+
+.accordion {
+    display: block;
+    width: 100%;
+    background-color: white;    
+    cursor: pointer;
+    padding:12px;
+    text-align: left;
+    border:none;
+    outline: none;
+    transition: 0.4s;
+    border-bottom: 1px solid hsl(240, 5%, 91%);!
+}
+
+.accordion:hover {
+    color: hsl(14, 88%, 65%);
+}
+
+button.accordion.active{
+    font-weight: bold;
+    color: hsl(238, 29%, 16%);
+}
+
+.active, .panel{
+   border: none;!
+}
+
+div.panel {
+  padding: 0 15px;
+  width: inherit!;
+  line-height: 1.5;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+div.panel.show {
+    display: block !important;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+#accordbox {
+    width: 30%;
+    position: absolute;
+    top: 40%;
+    right: 20%;
+}
+
+.arrowdown{
+    float: right;
+}
+
+.box {
+    position: absolute;
+    bottom: 8%;
+    left: 7%;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 375px) {
+    body {
+        text-align: center;
+    }
+    
+    #faqSection {
+        overflow: visible;
+        width: 90%;
+        margin: 150px auto;
+    }
+    
+    .faqbg {
+        bottom: 0;
+        right: 0;
+        float: none;
+        
+    }
+    
+    .womendesk {
+        bottom: 0;
+        right: 0;
+        bottom: 220px;
+        right: 10px;
+    }
+    
+    #accordbox {
+        width: 80%;
+        left: 10%;
+        position: relative;
+        top: -40%;
+        
+    }
+    
+    .box{
+        visibility: hidden;
+    }
+
+    
+}
+
+
+
